@@ -1,6 +1,7 @@
 
 ***🔐 PipeTan - Python Encryption & Decryption Tool***
-![IMG_20251107_104736](https://github.com/user-attachments/assets/33995780-af1f-4866-bf2c-20db498294c4)
+
+![IMG_20251107_104855](https://github.com/user-attachments/assets/41e22d8a-9e5f-45d7-8af7-0f58d7dc34e6)
 
 *PipeTan* is a compact and powerful Python-based tool designed to encrypt and decrypt `.py` files securely.  
 Perfect for developers who want to protect their source code and prevent reverse-engineering.
