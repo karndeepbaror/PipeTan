@@ -16,6 +16,7 @@ Perfect for developers who want to protect their source code and prevent reverse
 *_🔐  Run The Tool:_*
 ```
 git clone https://github.com/karndeepbaror/PipeTan.git
+cd PipeTan
 python pipetan.py
 ```
 
