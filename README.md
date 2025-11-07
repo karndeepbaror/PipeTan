@@ -40,5 +40,5 @@ _This project is licensed under the *MIT License*._
 
 ***👤 Author***
 
-Made with ❤️ by *Karndeep Baror*  
-LinkedIn: [linkedin.com/in/karndeepbaror](https://www.linkedin.com/in/karndeepbaror)
+Made with ❤️ by *__Karndeep Baror__*  
+**LinkedIn:** [linkedin.com/in/karndeepbaror](https://www.linkedin.com/in/karndeepbaror)
