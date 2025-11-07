@@ -128,9 +128,9 @@ def print_panel(title: str, body: str):
         print("-" * 24)
 
 def print_banner():
-    header = "PipeTan — Encrypt / Decrypt (Karndeep Baror)"
+    header = "PipeTan — Python Encrytion & Decryption Tool"
     if RICH:
-        console.print(Panel(Align.center(Text(header, style="bold cyan")), subtitle="AES-GCM / PBKDF2", expand=False))
+        console.print(Panel(Align.center(Text(header, style="bold cyan")), subtitle="Dev : Karndeep Baror", expand=False))
     else:
         print("="*len(header))
         print(header)
@@ -152,7 +152,7 @@ def progress_simulate(task_text: str, duration: float = 1.2):
 
 # ---- high-level flows ----
 def do_encrypt_flow():
-    print_panel("Step 1 — File to encrypt", "Provide path to the file you want to encrypt.")
+    print_panel("Step 1 — File to encrypt", "Provide Path to The File You Want to Encrypt.")
     inp = Prompt.ask("Input file path") if RICH else input("Input file path: ").strip()
     inp = inp.strip('"').strip("'")
     if not inp:
@@ -165,8 +165,8 @@ def do_encrypt_flow():
 
     # show options
     print_panel("Encryption Options",
-                "1) Key-file mode (recommended) — generates a random key and saves a .key file.\n"
-                "2) Passphrase mode — derive key from a passphrase you provide.")
+                "1) Key-File Mode — generates a random key and saves a .key file.\n"
+                "2) Passphrase Mode — derive key from a passphrase you provide.")
     choice = Prompt.ask("Choose mode", choices=["1","2"], default="1") if RICH else input("Choose mode [1=keyfile,2=passphrase]: ").strip() or "1"
 
     use_passphrase = (choice.strip() == "2")
@@ -278,7 +278,7 @@ def do_decrypt_flow():
     print_panel("Container Info", desc)
 
     if mode == "passphrase":
-        p = getpass.getpass("Enter passphrase: ")
+        p = getpass.getpass("Enter Passphrase: ")
         progress_simulate("Deriving key", 0.9)
         salt = ub64(salt_b64) if salt_b64 else None
         if salt is None:
